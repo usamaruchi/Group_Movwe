@@ -1,0 +1,155 @@
+body {
+    overflow-x: hidden;
+}
+
+
+.carousel__big__box__wish__page{
+    width: 100%;
+    margin-top: 100px;
+}
+
+
+.carousel__title__section__wish__page{
+    display: flex;
+}
+
+
+.carousel__title__wish__page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+}
+.wish__input__container{
+    width: 100%;
+}
+.wish__input__title{
+    position: relative;
+    width: 100%;
+    color: rgb(16, 255, 162);
+    font-size: 20px;
+    margin: 40px 0 0 0px;
+}
+
+.wish__input__box{
+    width: 100%;
+    /* display: flex;
+    justify-content: center; */
+    margin: 20px 0 0 0px;
+}
+
+.wish__input__{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wish__input{
+
+    transition: .3s;
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(16, 255, 162);
+background-color: rgba(255, 255, 255, 0.48);
+margin: auto;
+outline-style: none;
+font-size: 20px;
+color: rgb(255, 255, 255);
+text-align: center;
+
+}
+.wish__button{
+
+    margin-top: 20px;
+
+}
+.wish__button__box{
+    width: 100%;
+}
+
+
+
+.Page__4__genie__box_home{
+
+    /* opacity: 0; */
+    /* transform: scale(0); */
+    width: 5%;
+    position: absolute;
+    top: -130%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 2s;
+    transition-delay: 2.8s;
+    transform-origin: 40%, 40%;
+}
+
+.Page__4__genie{
+    width: 100%;
+    transition: 2s;
+    animation-name: genie;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes genie {
+    0% {
+        filter: brightness(80%);
+        transform: scale(1) rotate(2deg);
+    }
+
+    50% {
+        filter: brightness(150%);
+        transform: scale(1.1) rotate(-2deg);
+
+    }
+
+    100% {
+        filter: brightness(80%);
+        transform: scale(1) rotate(2deg);
+
+    }
+}
+
+
+
+
+@media screen and (min-width: 750px) {
+    .wish__input__title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+
+    .wish__input__{
+        margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .wish__input{
+        height: 30px;
+    }
+
+
+.wish__button__box{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn_2w{
+    font-size: 18px;
+    width: 100px;
+}
+
+
+}
+
+

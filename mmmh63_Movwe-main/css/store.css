@@ -1,0 +1,270 @@
+.hot-creatorpr/* mall */
+* {
+    /* outline: 1px red solid; */
+}
+
+.hidden{
+    /* box-sizing: border-box; */
+    /* outline: 10px red solid; */
+    position: relative;
+    overflow: hidden;
+}
+
+p {
+    color: #fff;
+    font-size: 14px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li a {
+    font-size: 20px;
+}
+
+h3 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.w_50 {
+    width: 50%;
+}
+
+.mt_24 {
+    margin-top: 24px;
+}
+
+.mt_48 {
+    margin-top: 48px;
+}
+
+.mt_72 {
+    margin-top: 72px;
+}
+
+.mb_150 {
+    margin-bottom: 150px;
+}
+
+.opacity {
+    opacity: 0;
+}
+
+.brand_color {
+    color: #10FFA2;
+}
+
+.shadow{
+    box-shadow: rgb(16 255 162) 0px 0px 10px;
+}
+
+/* banner */
+.mall_banner_s {
+    display: block;
+    padding-top: 60px;
+}
+
+.mall_banner {
+    display: none;
+    padding-top: 60px;
+}
+
+/* title */
+.title {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.title_item {
+    display: flex;
+}
+
+.title_item h3 {
+    color: #10FFA2;
+}
+
+/* discount */
+.mall_discount {
+    display: flex;
+    flex-direction: column-reverse;
+    /* justify-content: space-around; */
+}
+
+.mall_content {
+    display: flex;
+    align-items: center;
+}
+
+.product_svg{ 
+    position: absolute;
+    top:-80px;
+    right: -50px;
+    transform: scale(0.5);
+    animation: projuct_svg 2s linear infinite;
+}
+
+.mall_discount .img_wrap {
+    text-align: center;
+}
+
+.mall_discount a{
+    transform: scale(1);
+    transition: .3s;
+}
+
+.mall_discount a:hover{
+    transform: scale(1.1);
+}
+
+/* products_filter */
+.products_filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.main__btn,
+.star__btn,
+.dis__btn,
+.marvel__btn {
+    width: 49%;
+    border-radius: 5%;
+    padding: 8px 0;
+    z-index: 5;
+   
+}
+
+.main__btn:hover,
+.star__btn:hover,
+.dis__btn:hover,
+.marvel__btn:hover {
+    /* box-shadow: 0 0 10px#10FFA2; */
+   
+}
+
+
+
+.w_300 {
+    width: 300px;
+    /* height: 100%; */
+}
+
+/* pronduct */
+.mall_product {
+    width: 48.5%;
+}
+
+.row_products {
+    display: flex;
+    justify-content: space-between;
+    gap: 1%;
+    flex-wrap: wrap;
+}
+
+.container_product_details {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.product_text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_text .price {
+    color: #FEB73A;
+    font-size: 16px;
+}
+
+.product_text .price span {
+    color: rgba(255, 255, 255, .5);
+    font-size: 13px;
+}
+
+.product_text .tag {
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 20px;
+}
+
+@media screen and (min-width: 750px) {
+
+    /* banner */
+    .mall_banner_s {
+        display: none;
+    }
+
+    .mall_banner {
+        display: block;
+    }
+
+    .product_svg{ 
+        position:relative;
+        top:0px;
+        right:0px;
+        transform: scale(1);
+        animation: projuct_svg 2s linear infinite;
+    }
+    
+    @keyframes projuct_svg{
+        0%{
+            filter:drop-shadow(0px 0px 0px rgba(16, 255, 162,1));
+            transform: scale(1);
+        }
+    
+        50%{
+            filter:drop-shadow(0px 0px 8px rgba(16, 255, 162,1));
+            transform: scale(1.1);
+        }
+    
+        100%{
+            filter:drop-shadow(0px 0px 0px rgba(16, 255, 162,1));
+            transform: scale(1);
+        }
+    }
+
+    .products_filter {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2%;
+    }
+
+    .main__btn,
+    .star__btn,
+    .dis__btn,
+    .marvel__btn {
+        width: 23.5%;
+        cursor: pointer;
+    }
+
+    /* title */
+    .title {
+        display: flex;
+        justify-content: start;
+        gap: 24px;
+    }
+
+    /* discount */
+    .mall_discount {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+
+    .mall_product {
+        /* 五個商品扣掉4個3%Padding後的大小 */
+        width: 17.6%;
+    }
+
+    .row_products {
+        display: flex;
+        flex-direction: row;
+        gap: 1%;
+        flex-wrap: wrap;
+    }
+}

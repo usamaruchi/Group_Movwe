@@ -1,0 +1,128 @@
+.Click_filter{
+    background-color: #10FFA2;
+}
+
+.index_filter {
+    color: rgb(134, 133, 133);
+    /* width: 350px;
+    outline: 1px solid red; */
+}
+
+.index_filter button, .browse-filter-item{
+    font-size: 12px;
+}
+.ott_platform_title ,.genre_title, .browse-filter-title{
+    width: 40px;
+    font-size: 14px;
+}
+.platform button, .genre_item button{
+    color: rgb(134, 133, 133);
+}
+.index_filter a{
+    color: rgb(134, 133, 133);
+    text-decoration: none;
+}
+.index_filter button{
+    list-style: none;
+}
+.ott_platform, .genre, .browse-filter{
+    display: flex;
+    align-items: baseline;
+    padding: 8px 0px;
+}
+.platform button, .genre button, .browse-filter-item{
+    width: 64px;
+    /* height: 40px; */
+    text-align: center;
+    margin: 0px 4px;
+}
+.platform, .genre_item, .browse-filter-items{
+    height: 25px;
+    overflow-x: scroll;
+    /* overflow-y: hidden; */
+    display: flex;
+    align-items: center;
+}
+.browse-filter{
+    /* overflow-x: scroll;
+    overflow-y: hidden; */
+    /* outline: 1px solid yellow; */
+}
+.browse-filters button {
+    white-space: nowrap;
+}
+.browse-filters .browse-filter::-webkit-scrollbar {
+    display: none;
+}
+.browse-filter-title{
+    position: relative;
+    color:#10FFA2 ;
+    display: block;
+}
+.location{
+    width: 40px;
+}
+
+.Style{
+    width: 40px;
+
+}
+.Style_box{
+    width: 40px;
+
+}
+
+
+.genre_title{
+    color:#10FFA2 ;
+
+}
+.ott_platform_title{
+    color:#10FFA2 ;
+}
+
+
+.Clear__btn{
+    /* border-radius: 5px; */
+    color:#10FFA2 ;
+
+    box-shadow: 0 0 5px #10FFA2 inset;
+    width: 150px;
+    margin-left: 50px;
+}
+
+/* ---PC版--------------------------- */@media screen and (min-width: 750px) {
+    .index_filter button, .browse-filter-item{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .ott_platform_title ,.genre_title, .browse-filter-title{
+        width: 70px;
+        font-size: 24px;
+    }
+    .platform button, .genre button, .browse-filter-item{
+        width: 90px;
+        height: 30px;
+        text-align: center;
+        margin: 0px 4px;
+    }
+    .ott_platform, .genre, .browse-filter{
+        display: flex;
+        align-items: center;
+        padding: 8px 0px;
+    }
+    .platform, .genre_item, .browse-filter-items{
+        margin-left: 4px;
+        margin-top: 4px;
+        height: 40px;
+    }
+
+    .location{
+        width: 70px;
+    }
+    
+    .Style{
+        width: 70px;
+    }
+    
+}

@@ -1,0 +1,472 @@
+/* @media screen and (max-width: 500px) {
+    .left_nav {
+        display: none;
+    }
+
+} */
+
+/* 手機版 */
+
+/* 商品資訊 */
+
+.product {
+    width: 100%;
+}
+
+.mgr-15 {
+    margin-right: 15%;
+}
+
+/* 商品圖 */
+
+.product-demo {
+    width: 100%;
+}
+
+.product-img-wrap-demo {
+    width: 100%;
+}
+
+.product-img-row {
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #10FFA2;
+}
+
+.product-img-wrap {
+    width: 100%;
+}
+
+.product-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 商品敘述 */
+
+.product-description-pc {
+    display: none;
+}
+
+/* 商品選項 input樣式 */
+
+/* https://moderncss.dev/pure-css-custom-styled-radio-buttons/ */
+
+fieldset {
+    border: none;
+}
+
+fieldset input[type="radio"] {
+    position: relative;
+    appearance: none;
+    background-color: #1a1d24;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #10FFA2;
+    border-radius: 50%;
+}
+
+fieldset input[type="radio"]::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 5px);
+    left: calc(50% - 5px);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #10FFA2;
+    transform: scale(0);
+}
+
+fieldset input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+fieldset input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+fieldset input[type="radio"]:hover {
+    cursor: pointer;
+}
+
+/* 商品數量 */
+
+.button-number {
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+.button-number:hover {
+    cursor: pointer;
+}
+
+#quantityM {
+    width: 10%;
+    color: #fff;
+    background-color: #1a1d24;
+    border: none;
+    text-align: center;
+}
+
+/* 購買按鈕 */
+
+.button-buy {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #10FFA2;
+}
+
+.buy:hover {
+    cursor: pointer;
+}
+
+.buy {
+    width: 120%;
+    height: 40px;
+    background-color: #333;
+    border: none;
+}
+
+.buy:hover {
+    transform: scale(1.05);
+}
+
+/* 優惠券與規格說明 */
+
+.product-discount-pc {
+    display: none;
+}
+
+.product-discount-m {
+    display: block;
+    line-height: 2rem;
+}
+
+.product-discount-m .discount {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* 尺寸表 */
+
+table.size {
+    width: 100%;
+    text-align: center;
+}
+
+table.size,
+table.size th,
+table.size td {
+    color: #fff;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* 優惠券 */
+
+.discount svg {
+    width: 100%;
+    margin-top: 25px;
+}
+
+/* 商城ROW */
+
+.mall_product {
+    width: 48.5%;
+}
+
+.container_product_details {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.row_products {
+    display: flex;
+    flex-direction: row;
+    /* gap: 3%; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mall_product p {
+    color: #FFFFFD;
+}
+
+.mall_product .price {
+    color: #FEB73A;
+}
+
+.mall_product p span {
+    color: rgb(150, 150, 150);
+}
+
+.product_text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_text .tag {
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 20px;
+}
+
+.gooood {
+    position: absolute;
+    top: 580px;
+    right: -75px;
+    transform: scale(0.8);
+    animation: projuct_svg 2s linear infinite;
+    transition: .3s;
+}
+
+@keyframes projuct_svg{
+    0%{
+        filter:drop-shadow(0px 0px 0px rgba(16, 255, 162,1));
+    }
+
+    50%{
+        filter:drop-shadow(0px 0px 8px rgba(16, 255, 162,1));
+    }
+
+    100%{
+        filter:drop-shadow(0px 0px 0px rgba(16, 255, 162,1));
+    }
+}
+
+/* 電腦版 */
+
+@media screen and (min-width: 750px) {
+    .text__container {
+        width: 94%;
+        /* height: 100vh; */
+        /* background-color: rgb(124, 124, 124); */
+        margin: 80px auto 0 auto;
+    }
+
+    .top_nav_searchbar_box {
+        width: 200px;
+    }
+
+    .left_nav {
+        display: block !important;
+    }
+
+    .left_div {
+        display: block !important;
+    }
+
+    .bars {
+        opacity: 0;
+    }
+
+    .top_nav_movwe_img-2 {
+        transform: scale(1);
+    }
+
+    /* 商品資訊 */
+
+    .product {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    /* 左邊商品圖 */
+
+    .product-left {
+        display: flex;
+        align-items: center;
+        width: 50%;
+    }
+
+    /* 大圖 */
+
+    .product-demo {
+        width: 540px;
+        height: 540px;
+    }
+
+    .product-img-wrap-demo {
+        width: 100%;
+    }
+
+    .product-img-wrap-demo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* 小圖 */
+
+    .product-img-row {
+        width: 120px;
+        height: 540px;
+        /* margin-top: 20px; */
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        padding-bottom: 0;
+        /* 把手機板ㄉpadding拿掉 */
+    }
+
+    .product-img-row .product-img-wrap {
+        display: flex;
+    }
+
+    .product-img-row .product-img-wrap img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* 商品敘述 */
+
+    .product-description-pc {
+        display: block;
+    }
+
+    .product-description-m {
+        display: none;
+    }
+
+    /* 商品數量 */
+
+    #quantityPC {
+        width: 10%;
+        color: #fff;
+        background-color: #1a1d24;
+        border: none;
+        text-align: center;
+    }
+
+    /* 購買按鈕 */
+
+    .button-buy {
+        width: 50%;
+        padding-bottom: 20px;
+        border-bottom: none;
+    }
+
+    .gooood {
+        position: absolute;
+        top: 280px;
+        right: 180px;
+        transform: scale(1);
+        animation: projuct_svg 2s linear infinite;
+        transition: .3s;
+    }
+
+    @keyframes projuct_svg{
+        0%{
+            filter:drop-shadow(0px 0px 0px rgba(16, 255, 162,1));
+            transform: scale(1);
+        }
+    
+        50%{
+            filter:drop-shadow(0px 0px 8px rgba(16, 255, 162,1));
+            transform: scale(1.1);
+        }
+    
+        100%{
+            filter:drop-shadow(0px 0px 0px rgba(16, 255, 162,1));
+            transform: scale(1);
+        }
+    }
+
+    /* 優惠券與規格說明 */
+
+    .product-discount-pc {
+        display: block;
+        line-height: 2rem;
+    }
+
+    .product-discount-m {
+        display: none;
+    }
+
+
+    /* 商品尺寸 */
+
+    .product-discount-pc table.size {
+        width: 90%;
+    }
+
+    /* 下面商品row */
+
+    .mall_product {
+        width: 17.6%;
+        /* flex-grow: 1; */
+    }
+
+    .container_product_details {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .row_products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* gap: 3%; */
+    }
+
+
+}
+
+/* 商品已成功加入購物車 彈跳視窗*/
+
+.blackblack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100vw - 90px);
+    height: 100vh;
+    background-color: #00000080;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-success {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #000;
+    border: 2px solid #FEB73A;
+    border-radius: 10px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-logo-img-wrap {
+    width: 60px;
+    height: 60px;
+}
+
+.success-logo-word-img-wrap {
+    width: 150px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #10FFA2;
+    border-radius: 5px;
+}
+
+.fa-square-xmark {
+    font-size: 20px;
+}

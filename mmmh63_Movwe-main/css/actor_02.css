@@ -1,0 +1,448 @@
+body {
+    overflow-x: hidden;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+    }
+.actor__right__container{
+    height: 110vh;
+width: 100%;
+overflow-x: hidden;
+display: flex;
+justify-content: center;
+    }
+
+.actor_right{
+    width: 100%;
+}
+.go_to_ott_box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.actor-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.actor_pic{
+    width: 151px;
+    height: 227px;
+    width: 42%;
+    /* outline: 1px solid red; */
+}
+
+.actor_pic img{
+    width: 100%;
+}
+
+.actor_name{
+    color: rgb(16, 255, 162);
+    font-size: 50px;
+    font-weight: bolder;
+    margin-left: 16px;
+    width: 50%;
+}
+
+.actor_filter_word{
+    width: 95%;
+    margin: auto;
+    margin-top: 24px;
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.actor_filter_word a{
+    text-decoration: none;
+    color: #ffffff80;
+}
+
+.actor_all{
+    position: relative;
+    /* color: rgb(16, 255, 162); */
+}
+
+.actor_all a{
+    /* color: #10ffa2; */
+}
+
+.actor_all::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180%;
+    height: 1.5px;
+    /* background-color: rgb(16, 255, 162); */
+    transform: translate(-9.5px, 22px);
+}
+
+.actor_all:hover::after{
+    background-color: rgb(16, 255, 162) ;
+}
+
+.actor_movie, .actor_tvshow, .actor_show{
+    position: relative;
+}
+
+.actor_movie::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180%;
+    height: 1.5px;
+    background-color: rgba(255, 255, 255, 0);
+    transform: translate(-9.5px, 22px);
+}
+
+.actor_movie:hover::after{
+    background-color: rgb(16, 255, 162) ;
+}
+
+.actor_tvshow::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180%;
+    height: 1.5px;
+    background-color: rgba(255, 255, 255, 0);
+    transform: translate(-9.5px, 22px);
+}
+
+.actor_tvshow:hover::after{
+    background-color: rgb(16, 255, 162) ;
+}
+
+.actor_show::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180%;
+    height: 1.5px;
+    background-color: rgba(255, 255, 255, 0);
+    transform: translate(-9.5px, 22px);
+}
+
+.actor_show:hover::after{
+    background-color: rgb(16, 255, 162) ;
+}
+
+.actor_sho{
+    display: none;
+}
+
+.actor_underline{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 5px;
+}
+
+.actor_flims{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.actor_flim{
+    margin-top: 40px;
+
+}
+.ac_flim_pic{
+    width: 110px;
+    height: 146px;
+}
+.ac_flim_pic img{
+    width: 100%;
+    border-radius: 5px;
+}
+.ac_flim_name{
+    margin-top: 18px;
+    /* outline: 1px solid red; */
+    color: #FFFFFD;
+    font-size: 12px;
+}
+.ac_ott{
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+    /* outline: 1px solid red; */
+}
+.ac_netflix, .ac_iqiyi, .ac_kktv, .ac_friday{
+    width: 20px;
+    height: 20px;
+    /* outline: 1px solid red; */
+    margin-right: 4px;
+}
+.ac_netflix img{
+width: 104.8%;
+}
+
+
+.wish__lamp__box{
+    width: 10%;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 999;
+    animation-name: shake;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+
+}
+
+
+.home__make__a__wish{
+    transition: .3s;
+    opacity: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    color: rgb(16, 255, 162);
+    position: absolute;
+    top: -25%  ;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.magic__lamp-1{
+opacity: 0;
+transition: .3s;
+}
+
+
+.magic__lamp-2{
+opacity: 1;
+transition: .3s;
+position: absolute;
+top:0;
+left: 0;
+}
+
+.wish__lamp__box:hover{
+animation-name: none;
+
+}
+
+.wish__lamp__box:hover .home__make__a__wish{
+opacity: 1;
+}
+
+.wish__lamp__box:hover .magic__lamp-1{
+opacity: 1;
+}
+
+.wish__lamp__box:hover .magic__lamp-2{
+opacity: 0;
+}
+
+
+@keyframes shake {
+
+    0% {
+        transform: rotate(3deg);
+    }
+    
+    5% {
+        transform: rotate(-3deg);
+    
+    }
+    
+    10% {
+        transform: rotate(3deg);
+    
+    }
+    
+    15% {
+        transform: rotate(-3deg);
+    
+    }
+    
+    20% {
+        transform: rotate(3deg);
+    
+    }
+    
+    25% {
+        transform: rotate(-3deg);
+    
+    }
+    
+    30% {
+        transform: rotate(3deg);
+    
+    }
+    
+    35% {
+        transform: rotate(-3deg);
+    
+    }
+    
+    40% {
+        transform: rotate(5deg);
+    
+    }
+    
+    45% {
+        transform: rotate(-3deg);
+    
+    }
+    
+    50% {
+        transform: rotate(3deg);
+    
+    }
+    
+    55% {
+        transform: rotate(-3deg);
+    
+    }
+    
+    }
+
+
+
+@keyframes  addfild {
+
+    0%{
+        transform: scale(1) rotate(0deg);
+        color: rgb(199, 199, 199);
+    }
+    50%{
+        transform: scale(1.2) rotate(5deg);
+        color: aquamarine;
+text-shadow: 0 0 5px rgb(16, 255, 162);
+
+    }
+    100%{
+        transform: scale(1) rotate(0deg);
+        color: rgb(199, 199, 199);
+
+    }
+
+
+}
+
+
+
+/* ---PC版--------------------------- */
+@media screen and (min-width: 750px) {
+    .actor{
+        display: flex;  
+        justify-content: space-between;
+        align-items: flex-start;
+        /* outline: 1px solid red; */
+    }
+    .actor_top{
+        width: 50%;
+        
+    }
+    .actor_right{
+        width: 90%;
+        margin-top: 60px;
+        /* margin-right: 100px; */
+    }
+    .actor_underline{
+        width: 90%;
+    }
+    .actor_flims{
+        width: 90%;
+    }
+    .actor_pic{
+        position: relative;
+        width: 510px;
+        
+        margin-top: 100px;
+        /* outline: 1px solid blue; */
+    }
+    .actor_pic img{
+        width: 100%;
+    }
+    .actor_name{
+        position: absolute;
+        top: 550px;
+        left: 200px;
+        line-height: 90px;
+        font-size: 110px;
+        
+    }
+    .actor_filter_word{
+        font-size: 24px;
+        /* outline: 1px solid yellow; */
+        
+        justify-content: space-between;
+        
+    }
+    .actor_sho{
+        display: block;
+    }
+    .actor_all::after{
+        height: 2px;
+        transform: translate(-18px, 39px);
+    }
+    
+    .actor_movie::after{
+        height: 1.66px;
+        transform: translate(-18px, 39.6px);
+    }
+    
+    .actor_tvshow::after{
+        width: 170%;
+        height: 1.66px;
+        transform: translate(-25px, 39.6px);
+    }
+    
+    .actor_show::after{
+        height: 1.66px;
+        transform: translate(-18px, 39.6px);
+    }
+    
+    .actor_underline{
+        height: 2px;
+    }
+
+    .ac_flim_pic{
+        width: 224px;
+        height: 316px;
+    }
+    .ac_flim_pic img{
+        border-radius: 10px;
+    }
+    .ac_flim_name{
+        font-size: 14px;
+    }
+    .ac_ott{
+        width: 100%;
+        display: flex;
+        margin-top: 5px;
+        /* outline: 1px solid red; */
+    }
+    .actor_flims{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .ac_netflix, .ac_iqiyi, .ac_kktv, .ac_friday{
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+    }
+
+    .actor__right__container{
+        height: 110vh;
+        width: 60%;
+    }
+
+}
